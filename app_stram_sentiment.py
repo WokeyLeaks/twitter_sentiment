@@ -39,7 +39,7 @@ def main():
     
 
     html_temp = """
-	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live Twitter Sentiment Analysis</p></div>
+	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live Twitter Sentiment Analysis...</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
