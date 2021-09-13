@@ -105,7 +105,6 @@ def main():
         ###
         text_new = " ".join([txt for txt in Topic_text.split() if txt not in stopwords])
         return text_new
-print (text_new)
     
     #
     from PIL import Image
