@@ -39,7 +39,7 @@ def main():
     
 
     html_temp = """
-	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live twitter Sentiment analysis</p></div>
+	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live Twitter Sentiment Analysis</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
@@ -185,11 +185,12 @@ print (text_new)
             st.write(plt.imshow(wordcloud, interpolation='bilinear'))
             st.pyplot()
     st.sidebar.header("About App")
-    st.sidebar.info("A Twitter Sentiment analysis Project which will scrap twitter for the topic selected by the user. The extracted tweets will then be used to determine the Sentiments of those tweets. \
+    st.sidebar.info("A Twitter Sentiment analysis Project which will scrape twitter for the topic selected by the user. The extracted tweets will then be used to determine the Sentiments of those tweets. \
                 The different Visualizations will help us get a feel of the overall mood of the people on Twitter regarding the topic we select.")
     st.sidebar.text("Built with Streamlit")
     
-    st.sidebar.header("For Any Queries/Suggestions Please reach out at :")
+    st.sidebar.header("Thank you to RAM KAURAV (mysticalcode)
+Software Developer ,Machine Learning Engineer Summer intern @persistentsystems @Nutriwell India :")
     st.sidebar.info("ramkaurav90@gmail.com")
     
 
