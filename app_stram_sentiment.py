@@ -189,8 +189,7 @@ print (text_new)
                 The different Visualizations will help us get a feel of the overall mood of the people on Twitter regarding the topic we select.")
     st.sidebar.text("Built with Streamlit")
     
-    st.sidebar.header("Thank you to RAM KAURAV (mysticalcode)
-Software Developer ,Machine Learning Engineer Summer intern @persistentsystems @Nutriwell India :")
+    st.sidebar.header("Thank you")
     st.sidebar.info("ramkaurav90@gmail.com")
     
 
