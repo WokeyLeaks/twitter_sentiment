@@ -39,25 +39,20 @@ def main():
     
 
     html_temp = """
-	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live Twitter Sentiment Analysis...</p></div>
+	<div style="background-color:tomato;"><p style="color:white;font-size:40px;padding:9px">Live Twitter Sentiment Analysis</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
-    st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
+    st.subheader("Enter whatever you'd like to get the sentiment analysis on:")
 
     
-    consumer_key = "dSvvwfif7tiAuf3v7thNE3PaQ"
-    consumer_secret = "M7nQijGhFk5ocNXFtpgsBR1bKk1sufgLAdzClm7VOYJW1dgohS"
-    access_token = "1074338008659386368-9U1Mech9EDcqPSo4koHjQ0nPrHSXVA"
-    access_token_secret = "fZigrghvK6UG2zsYBczvdzBhGxtxYHuN5Ol5OT5QmvxOI"
-
-
-
-    
-
+    #consumer_key = "dSvvwfif7tiAuf3v7thNE3PaQ"
+    #consumer_secret = "M7nQijGhFk5ocNXFtpgsBR1bKk1sufgLAdzClm7VOYJW1dgohS"
+    #access_token = "1074338008659386368-9U1Mech9EDcqPSo4koHjQ0nPrHSXVA"
+    #access_token_secret = "fZigrghvK6UG2zsYBczvdzBhGxtxYHuN5Ol5OT5QmvxOI"
+	
     auth = tweepy.OAuthHandler( consumer_key , consumer_secret )
     auth.set_access_token( access_token , access_token_secret )
     api = tweepy.API(auth)
-    
     
     df = pd.DataFrame(columns=["Date","User","IsVerified","Tweet","Likes","RT",'User_location'])
     
@@ -188,7 +183,7 @@ def main():
                 The different Visualizations will help us get a feel of the overall mood of the people on Twitter regarding the topic we select.")
     st.sidebar.text("Built with Streamlit")
     
-    st.sidebar.header("Thank you")
+    st.sidebar.header("Thank you to ")
     st.sidebar.info("ramkaurav90@gmail.com")
     
 
